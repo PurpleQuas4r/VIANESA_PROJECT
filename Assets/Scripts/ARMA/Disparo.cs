@@ -10,15 +10,12 @@ public class Disparo : MonoBehaviour
     public float shotRate = 0.3f;
     private float shorRateTime = 0;
 
-
-
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
+        GameObject newBullet;
+        newBullet = Instantiate(bullet, spawnPoint.position,spawnPoint.rotation);
+
+        newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward*shotForce);
         
     }
 }
