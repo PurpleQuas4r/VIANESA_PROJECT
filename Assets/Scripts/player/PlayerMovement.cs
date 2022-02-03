@@ -26,9 +26,9 @@ public class PlayerMovement : MonoBehaviour
         //checkear si la vianesa esta en el suelo
         isGrounded = Physics.CheckSphere(groundCheck.position,sphereRadius,groundMask);
         
-        if (isGrounded && velocity.y <= -10 ) 
+        if (isGrounded && velocity.y <= 0 ) 
         {
-            velocity.y = -10f;
+            velocity.y = -2f;
         }
 
         float x = Input.GetAxis("Horizontal");
