@@ -12,10 +12,22 @@ public class Disparo : MonoBehaviour
 
     void Update()
     {
-        GameObject newBullet;
-        newBullet = Instantiate(bullet, spawnPoint.position,spawnPoint.rotation);
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (Time.time> shorRateTime)
+            {
+                GameObject newBullet;
+                newBullet = Instantiate(bullet, spawnPoint.position,spawnPoint.rotation);
 
-        newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward*shotForce);
+                newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward*shotForce);
+
+                shorRateTime = Time.time + shotRate;
+
+                Destroy(newBullet, 5);
+            }
+       
+        
+        }
         
     }
 }
