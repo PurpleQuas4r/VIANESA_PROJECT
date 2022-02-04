@@ -7,21 +7,62 @@ public class brain : MonoBehaviour
 {
     
     public NavMeshAgent navMeshAgent;
-    public GameObject destino1;
-    public GameObject destino2;
+
+    public Transform[] destinations;
+
+    public float distanceToFollowPath = 2;
+
+    private int i = 0;
+
+    [Header("--------FollowPlayer?---------")] 
+
+    public bool followPlayer;
+
+    private GameObject player;
+
+    private float distanceToPlayer;
+
+    public float distanceToFollowPlayer = 10;
 
     void Start()
     {
-        navMeshAgent.destination = destino1.transform.position;
+
+        navMeshAgent.destination = destinations[i].transform.position;
+        player = FindObjectOfType<PlayerMovement>().gameObject;
 
     }
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, destino1.transform.position);
-
-        if (distance < 2)
+        distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        if (distanceToPlayer <= distanceToFollowPlayer && followPlayer)
         {
-            navMeshAgent.destination = destino2.transform.position;
+            FollowPlayer();
         }
+        else
+        {
+            EnemyPath();
+        }
+
+    }
+
+    public void EnemyPath()
+    {
+        navMeshAgent.destination = destinations[i].position;
+        if(Vector3.Distance(transform.position, destinations[i].position) <= distanceToFollowPath)
+        {
+            if(destinations[i] != destinations[destinations.Length - 1] )
+            {
+                i++;
+            }
+            else
+            {
+                i = 0;
+            }
+        }
+    }
+
+    public void FollowPlayer()
+    {
+        navMeshAgent.destination = player.transform.position;
     }
 }
