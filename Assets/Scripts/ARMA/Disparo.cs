@@ -14,8 +14,10 @@ public class Disparo : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            if (Time.time> shorRateTime)
+            if (Time.time> shorRateTime && GameManager.Instance.gunAmmo > 0)
             {
+                GameManager.Instance.gunAmmo--;
+
                 GameObject newBullet;
                 newBullet = Instantiate(bullet, spawnPoint.position,spawnPoint.rotation);
 
