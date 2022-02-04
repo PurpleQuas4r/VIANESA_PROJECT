@@ -6,7 +6,7 @@ public class Disparo : MonoBehaviour
 {
     public Transform spawnPoint;
     public GameObject bullet;
-    public float shotForce = 1500f;
+    public float shotForce = 150000f;
     public float shotRate = 0.3f;
     private float shorRateTime = 0;
 
