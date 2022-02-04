@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 8419298627342039909}
   - component: {fileID: 8419298627342039930}
   - component: {fileID: 8419298627342039931}
-  - component: {fileID: 8419298627342039928}
-  - component: {fileID: 3112677258273140472}
+  - component: {fileID: 6442343222754998892}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Untagged
@@ -113,20 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a17adcd642baad4597f678ea246b47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &8419298627342039928
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8419298627342039929}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.000135, y: 0.000135, z: 0.0012207725}
-  m_Center: {x: 0, y: 4.3826943e-12, z: 0.00023538693}
---- !u!136 &3112677258273140472
+--- !u!136 &6442343222754998892
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,8 +121,8 @@ CapsuleCollider:
   m_GameObject: {fileID: 8419298627342039929}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.0005625
-  m_Height: 0.000135
-  m_Direction: 1
-  m_Center: {x: 0, y: 3.6379786e-12, z: 0.00018749997}
+  m_Enabled: 1
+  m_Radius: 0.00007862091
+  m_Height: 0.0012404609
+  m_Direction: 2
+  m_Center: {x: 0.0000003298591, y: -0.00000044271349, z: 0.00014693856}
