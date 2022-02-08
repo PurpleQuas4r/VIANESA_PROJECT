@@ -14,6 +14,8 @@ public class Granada : MonoBehaviour
 
     bool exploded = false;
 
+    public GameObject explosionEffect;
+
     
     void Start()
     {
@@ -34,6 +36,9 @@ public class Granada : MonoBehaviour
 
     void Explode()
     {
+
+        Instantiate(explosionEffect, transform.position, transform.rotation);
+
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
         foreach ( var rangeObjects in colliders)
