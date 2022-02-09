@@ -18,7 +18,7 @@ public class PlatformController : MonoBehaviour
     }
     void MovePlatform()
     {
-        platformRb.MovePosition(Vector3.MoveTowards(platformRb.position, platformPositions[nextPosition].position, platformSpeed * Time.deltaTime));
+        platformRb.MovePosition(Vector3.MoveTowards(platformRb.position, platformPositions[nextPosition].position, platformSpeed * Time.fixedDeltaTime));
         
         if(Vector3.Distance(platformRb.position, platformPositions[nextPosition].position) <= 0)
         {

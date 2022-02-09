@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 373eb8880a98a4d4b943c108e1fd1b3d, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d9107513779d27f4cb988c9bd62db193, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9107513779d27f4cb988c9bd62db193, type: 3}
 --- !u!1001 &36839146
@@ -202,6 +206,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b525ae10a281d5744b5bbe676e258c32, type: 3}
       propertyPath: m_Name
       value: Lemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b525ae10a281d5744b5bbe676e258c32, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b525ae10a281d5744b5bbe676e258c32, type: 3}
       propertyPath: m_RootOrder
@@ -261,6 +269,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b525ae10a281d5744b5bbe676e258c32, type: 3}
+--- !u!114 &39514704 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3892549044297888954, guid: d0fac0f26b297894bacb525115201bbe, type: 3}
+  m_PrefabInstance: {fileID: 1903131590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &160377146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -396,6 +415,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 6d4327dfb98c43e40aaffa0dbadab9e9, type: 3}
       propertyPath: m_Name
       value: Fork
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6d4327dfb98c43e40aaffa0dbadab9e9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6d4327dfb98c43e40aaffa0dbadab9e9, type: 3}
       propertyPath: m_RootOrder
@@ -536,6 +559,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &397681620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3892549044189006858, guid: d0fac0f26b297894bacb525115201bbe, type: 3}
+  m_PrefabInstance: {fileID: 1903131590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &406439060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -546,6 +580,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2c2f009d66b8e2d4ebcb46ca8e73d354, type: 3}
       propertyPath: m_Name
       value: KnifeKitchen
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2c2f009d66b8e2d4ebcb46ca8e73d354, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2c2f009d66b8e2d4ebcb46ca8e73d354, type: 3}
       propertyPath: m_RootOrder
@@ -639,6 +677,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 21e8797b1fde18247a497d3290542670, type: 3}
       propertyPath: m_Name
       value: Knife2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 21e8797b1fde18247a497d3290542670, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 21e8797b1fde18247a497d3290542670, type: 3}
       propertyPath: m_RootOrder
@@ -866,6 +908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: table (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 51778e330ad250f4bbccd7f9471e91d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51778e330ad250f4bbccd7f9471e91d1, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1067,7 +1113,7 @@ GameObject:
   - component: {fileID: 1140761212}
   - component: {fileID: 1140761211}
   - component: {fileID: 1140761210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,6 +1262,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d9107513779d27f4cb988c9bd62db193, type: 3}
       propertyPath: m_Name
       value: Cabinet1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d9107513779d27f4cb988c9bd62db193, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9107513779d27f4cb988c9bd62db193, type: 3}
@@ -1432,6 +1482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FridgeSBS
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b37603f8ea8ba83489df2180bfd8eef2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b37603f8ea8ba83489df2180bfd8eef2, type: 3}
 --- !u!1001 &1627981422
@@ -1444,6 +1498,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 6ad5a50c9bf71404f84ec7d006812e75, type: 3}
       propertyPath: m_Name
       value: Apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6ad5a50c9bf71404f84ec7d006812e75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ad5a50c9bf71404f84ec7d006812e75, type: 3}
       propertyPath: m_RootOrder
@@ -1734,6 +1792,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1043554965193541093, guid: f2ba00bb96a0f9449b5317ad5273acdb, type: 3}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 397681620}
+    - target: {fileID: 1043554965193541093, guid: f2ba00bb96a0f9449b5317ad5273acdb, type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 39514704}
     - target: {fileID: 1043554965193541094, guid: f2ba00bb96a0f9449b5317ad5273acdb, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1807,6 +1873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d9107513779d27f4cb988c9bd62db193, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9107513779d27f4cb988c9bd62db193, type: 3}
 --- !u!1001 &2058472271
@@ -1819,6 +1889,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 51778e330ad250f4bbccd7f9471e91d1, type: 3}
       propertyPath: m_Name
       value: table
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 51778e330ad250f4bbccd7f9471e91d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 51778e330ad250f4bbccd7f9471e91d1, type: 3}
       propertyPath: m_RootOrder
@@ -1932,6 +2006,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f73c4d92ecffb1742a089d669e5fe798, type: 3}
       propertyPath: m_Name
       value: CornerCabinet2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f73c4d92ecffb1742a089d669e5fe798, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73c4d92ecffb1742a089d669e5fe798, type: 3}

@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -23,6 +26,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //reiniciar escena
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(0);
+        }
+
         //checkear si la vianesa esta en el suelo
         isGrounded = Physics.CheckSphere(groundCheck.position,sphereRadius,groundMask);
         
