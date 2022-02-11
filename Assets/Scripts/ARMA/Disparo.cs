@@ -12,7 +12,7 @@ public class Disparo : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") &&  !PauseMenu.GameIsPaused)
         {
             if (Time.time> shorRateTime && GameManager.Instance.gunAmmo > 0)
             {

@@ -9,7 +9,7 @@ public class ThrowGrenade : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E) && !PauseMenu.GameIsPaused)
         {
             Throw();
 

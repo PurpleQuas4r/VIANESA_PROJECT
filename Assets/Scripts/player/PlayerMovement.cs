@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         //reiniciar escena
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         //checkear si la vianesa esta en el suelo
