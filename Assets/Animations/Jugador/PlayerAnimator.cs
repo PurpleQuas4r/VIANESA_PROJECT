@@ -61,16 +61,6 @@ public class PlayerAnimator : MonoBehaviour
         }
 
         //sword
-        if (Input.GetMouseButtonDown(1))
-        {
-            anim.SetBool("sword", true);
-        }
-
-        if (!Input.GetMouseButtonDown(1))
-        {
-            anim.SetBool("sword", false);
-        }
-
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetBool("fight", true);
